@@ -19,3 +19,18 @@ cat readme
 this will show you the password to the next level 
 - now type ```exit``` to exit this machine and connect to the level2 machine
 </details>
+
+<details>
+
+<summary>level 1</summary>
+
+> connect to this machine using ssh as mentionned before
+
+once you get there type ```ls``` you will find a file called ```-``` 
+if you try to ```cat - ``` this wont work because '-' is a special character that used to indcates flags of a command so if you wanna tell the terminal to give you tha content of that '-' file, type :
+
+```sh
+cat ./-
+```
+
+</details>
