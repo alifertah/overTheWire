@@ -1,6 +1,8 @@
 # overTheWireSolves
 
-## level 0
+<details>
+<summary >level 0</summary>
+
 
 > first of all you need to connect to ssh and this step must be repeated everytime you get the password of the next level
 
@@ -16,3 +18,4 @@ cat readme
 
 this will show you the password to the next level 
 - now type ```exit``` to exit this machine and connect to the level2 machine
+</details>
