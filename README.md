@@ -34,3 +34,18 @@ cat ./-
 ```
 
 </details>
+
+<details>
+
+<summary>level 2</summary>
+
+> connect to this machine using ssh as mentionned before
+
+once you get there type ```ls``` you will find a file called `spaces in this filename`
+
+you cant use `cat spaces in this file name` because it will count all other words after a single space as an argument to that command do you have to use a `\` before a space to skip it 
+```sh
+cat spaces\ in\ this\ filename
+```
+
+</details>
