@@ -78,3 +78,20 @@ cat ./file01
 keep doing this for all the files until you find a human readable format, thats the password.
 
 </details>
+
+<details>
+
+<summary>level 5</summary>
+
+> connect to this machine using ssh as mentionned before
+
+inside `inhere` directory you will find a lot of directories that contain a lot of files,
+you cant use `cat` to each file until you find tha password, in the subject they gave you a hint, that the file we are looking for is 1033 bytes in size, and human readable...
+so we will use the find command and give it the size like this : 
+
+```sh
+find . -size 1033c
+```
+this will print the path of the file and print its content using `cat`
+
+</details>
