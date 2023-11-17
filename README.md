@@ -63,3 +63,18 @@ cat .hidden
 ```
 
 </details>
+
+
+<details>
+
+<summary>level 4</summary>
+
+> connect to this machine using ssh as mentionned before
+
+always we follow the same steps so you will find some files in inhere directory that you cant use `cat` to see there cntent, you just have to specify the right path and use the command like this 
+```sh
+cat ./file01
+```
+keep doing this for all the files until you find a human readable format, thats the password.
+
+</details>
