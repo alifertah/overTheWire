@@ -95,3 +95,24 @@ find . -size 1033c
 this will print the path of the file and print its content using `cat`
 
 </details>
+
+<details>
+
+<summary>level 6</summary>
+
+> connect to this machine using ssh as mentionned before
+
+here you they put the password file somewhere in the machine so you have to search in `/`. lets use our find command and give it the arguments given to us, size...
+```sh
+find / -group bandit6 -user bandit7 -size 33c -type f
+```
+this gives us a lot of files and also an error msg that says `permession denied`
+
+so we will use this instead 
+
+```sh
+find / -group bandit6 -user bandit7 -size 33c -type f 2>/dev/null
+```
+`2>/dev/null` This part redirects error messages (stream 2, which is the standard error) to `/dev/null`, essentially suppressing error output. This is useful to hide any permission-denied errors or other potential issues during the search.
+
+</details>
