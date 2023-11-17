@@ -49,3 +49,17 @@ cat spaces\ in\ this\ filename
 ```
 
 </details>
+
+<details>
+
+<summary>level 3</summary>
+
+> connect to this machine using ssh as mentionned before
+
+if you type `ls` you will find a directory called `inhere` type `cd inhere` to go to this directory and type `ls` again you will find nothing here, this doesnt mean that there is nothing, maybe there is a hidde  files, to show em type `ls -a`
+then : 
+```sh
+cat .hidden
+```
+
+</details>
