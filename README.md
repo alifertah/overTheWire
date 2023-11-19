@@ -133,3 +133,16 @@ cat data.txt | grep "millionth"
 this will take the content of `data.txt` and outputs only the line that contains that word
 
 </details>
+
+<details>
+
+<summary>level 8</summary>
+
+> connect to this machine using ssh as mentionned before
+
+we are looking for the password that is stored in the file `data.txt` and it's the only line of text that occurs only once. the command is: 
+```sh
+sort data.txt | uniq -u
+```
+this command will sort the `data.txt` file  so the count of uniq will not reset and `-u` flag will print the line that appears one time, count = 1;
+</details>
