@@ -116,3 +116,20 @@ find / -group bandit6 -user bandit7 -size 33c -type f 2>/dev/null
 `2>/dev/null` This part redirects error messages (stream 2, which is the standard error) to `/dev/null`, essentially suppressing error output. This is useful to hide any permission-denied errors or other potential issues during the search.
 
 </details>
+
+
+<details>
+
+<summary>level 7</summary>
+
+> connect to this machine using ssh as mentionned before
+
+after finding a file called `data.txt` we are looking for a password that is written next to the word 'millionth', here is the command
+
+```sh
+cat data.txt | grep "millionth"
+```
+
+this will take the content of `data.txt` and outputs only the line that contains that word
+
+</details>
