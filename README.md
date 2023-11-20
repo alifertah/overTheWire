@@ -146,3 +146,15 @@ sort data.txt | uniq -u
 ```
 this command will sort the `data.txt` file  so the count of uniq will not reset and `-u` flag will print the line that appears one time, count = 1;
 </details>
+
+
+<summary>level 9</summary>
+
+> connect to this machine using ssh as mentionned before
+
+here we are looking for a human readable string in the none redable file
+we will use the command `strings` that prints only human readable characters. and we akso know that the password is preceded by several ‘=’ characters so we will use this command :
+```sh
+strings data.txt | grep "===="
+```
+</details>
