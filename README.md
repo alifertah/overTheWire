@@ -172,3 +172,17 @@ in linux we have `base64` command, we must just use that flag `-d` that means de
 base64 -d data.txt
 ```
 </details>
+
+<details>
+
+<summary>level 11</summary>
+
+> connect to this machine using ssh as mentionned before
+
+this level contains rot13 encryption, we have two options :
+- use the rot13 decryption website 
+- use tr command :
+    ```sh
+    cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+    ```
+</details>
