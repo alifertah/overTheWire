@@ -158,3 +158,14 @@ we will use the command `strings` that prints only human readable characters. an
 strings data.txt | grep "===="
 ```
 </details>
+
+<summary>level 10</summary>
+
+> connect to this machine using ssh as mentionned before
+
+we will finde a file that contains a string that ends with '=', so its a base64 encryption.
+in linux we have `base64` command, we must just use that flag `-d` that means decode:
+```sh
+base64 -d data.txt
+```
+</details>
