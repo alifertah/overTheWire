@@ -147,6 +147,7 @@ sort data.txt | uniq -u
 this command will sort the `data.txt` file  so the count of uniq will not reset and `-u` flag will print the line that appears one time, count = 1;
 </details>
 
+<details>
 
 <summary>level 9</summary>
 
@@ -158,6 +159,8 @@ we will use the command `strings` that prints only human readable characters. an
 strings data.txt | grep "===="
 ```
 </details>
+
+<details>
 
 <summary>level 10</summary>
 
